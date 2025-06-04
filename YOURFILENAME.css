@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* COLOR PALETTE USED:
+Steelers black #101820
+Steelers gold #FFB612
+Steelers blue #003087
+Steelers red #C60C30
+Steelers silver #A5ACAF
+*/
+* { box-sizing: border-box; }
+body { 
+color: #000000;
+font-family: "Roboto", Verdana, Arial, sans-serif;
+margin: 0;
+display: flex;
+flex-direction: column;
+height: 100vh;  
+}
+header { 
+background-color: #101820;
+padding: 0.25rem;
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Pittsburgh_Steelers_logo.svg/1920px-Pittsburgh_Steelers_logo.svg.png");
+background-size: 85px;
+background-repeat: no-repeat;
+background-position: top 5px left 50px;  
+}
+h1 {
+color: #FFB612;
+font-family: "Roboto", Georgia, serif;  
+font-weight: 900;
+font-size: 2.3rem;
+text-align: center;
+}
+h2 { color: #FFB612;
+text-shadow: 1px 1px 1px black;}
+nav { background-color: #FFB612;
+font-size: 1.2rem;
+text-align: center;
+font-weight: bold;
+position: sticky;
+top: 0;  
+display: flex;
+justify-content: center;
+}
+nav a { text-decoration: none; }
+nav a:link   { color: #000000; }
+nav a:visited { color: #000000; }
+nav a:hover   { color: #C60C30; }
+.mynav {
+padding: 1rem 1rem;
+}
+main {
+display: flex;
+flex-grow: 1;
+padding: 0.5rem 2rem;
+}
+img {
+float: right;
+margin: 2rem;
+width: 250px;
+height: auto;  
+max-width: 100%;
+}
+footer { background-color: #A5ACAF;
+font-size: .70rem;
+font-style: italic;
+padding: 1em;
+text-align: center;
+}
+/* MEDIA QUERY FOR MOBILE */
+@media (max-width: 480px) { 
+  img {
+  float: none;
+  margin: 0 auto 0 auto;
+  display: block;
+  padding-bottom: 15px;
+  }
+  h2 {text-align: center;}  
+  nav {
+  flex-direction: column;
+  position: static;
+  }
+  .mynav {
+  border-bottom: solid #101820 2px;
+  }
+}
+@media (max-width: 620px)
+{
+  header 
+  {
+    background-image: none;  
+  }
+}  
